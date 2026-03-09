@@ -1,3 +1,15 @@
+nav {
+	padding: 5px;
+	background-color: lightblue;
+}
+nav a {
+	color: blue;
+	padding: 5px;
+	display: block;
+}
+h1 {
+	color: blue;
+}
 main {
 	max-width: 840px;
 }
@@ -16,6 +28,9 @@ aside img {
 main img {
 	width: 150px;
 	height: auto;
+	border: 1px solid blue;
+	margin: 5px;
+	box-shadow: 0 0 0 1px blue;
 }
 p {
 	padding: 0;
