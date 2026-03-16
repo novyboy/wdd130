@@ -1,43 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	font-family: helvetica;
+}
+
+
+body {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+header {
+	width: 100%;
+}
 nav {
+	display: flex;
 	padding: 5px;
 	background-color: lightblue;
+	justify-content: center;
 }
 nav a {
 	color: blue;
 	padding: 5px;
 	display: block;
 }
+
+
+main {
+	max-width: 840px;
+	padding: 1rem;
+}
 h1 {
 	color: blue;
 }
-main {
-	max-width: 840px;
-}
-aside {
-	width: 300px;
-	margin: 5px;
-	border: 1px solid blue;
-	padding: 20px;
-	background-color: lightblue;
-	color: black;
-}
-aside img {
-	width: 200px;
-	height: auto;
-}
 main img {
+	float: right;
 	width: 150px;
 	height: auto;
 	border: 1px solid blue;
+	border-radius: 1rem;
 	margin: 5px;
-	box-shadow: 0 0 0 1px blue;
+	box-shadow: 0 0 10px 1px lightblue;
 	padding: 5px;
 }
 p {
 	padding: 0;
 }
+
+main h2 {
+	clear: both;
+}
+
+aside {
+	width: 300px;
+	text-align: center;
+	
+	position: relative;
+	
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+}
+aside img {
+	width: 200px;
+	height: auto;
+	border-radius: 1rem;
+}
+aside h2 {
+	position: absolute;
+}
+
+
 footer {
+	width: 100%;
 	margin-top: 15px;
 	border-top: 1px solid #000;
 	text-align: center;
+}
+
+/* Class Selectors */
+.box {
+	position: relative;
+	margin: 1rem;
+	border: 1px solid blue;
+	border-radius: 1rem;
+	padding: 1rem;
+	background-color: lightblue;
+	color: #000;
 }
