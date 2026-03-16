@@ -77,18 +77,18 @@ section p {
 	width: 100%;
 	height: auto;
 }
-.hero h1, article {
-	position: absolute;
-}
 .hero h1 {
+	position: absolute;
 	font-size: 100px;
 	mix-blend-mode: exclusion;
 }
 .hero article {
+	position: absolute;
 	bottom: 0;
 	width: calc(100% - 2rem);
 	border-radius: 1rem;
 	background-color: var(--secondary-color);
+	color: var(--accent2-color);
 }
 .hero article img {
 	float: right;
