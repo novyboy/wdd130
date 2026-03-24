@@ -26,7 +26,13 @@ header, main, footer {
 	margin: 0 auto;
 }
 
-header, footer {
+header {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: var(--primary-color);
+}
+
+footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
