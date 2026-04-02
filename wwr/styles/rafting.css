@@ -116,26 +116,74 @@ section p {
 	border-radius: 1rem;
 }
 
-.trips {
+.trips, .employees {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
 }
-.trips div {
+.trips div, .employees div {
 	display: flex;
 	flex-direction: row;
 	gap: 1rem;
 	width: 100%;
 	overflow: hidden;
 }
-.trips img {
+.trips img, .employees img {
 	width: 100%;
 	border-radius: 1rem;
 }
-.trips figure {
+.trips figure, .employees figure {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
 	flex: 1 1 auto;
+}
+
+/* Contact Page */
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.form label {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	flex: 1 1 auto;
+	width: 100%;
+}
+.form button {
+	padding: 0.75rem;
+	background-color: var(--primary-color);
+	border-radius: 0.5rem;
+	border-style: hidden;
+}
+.form input, .form textarea {
+	border-radius: 0.5rem;
+	border-style: solid;
+	border-width: 1px;
+	padding: 0.5rem;
+}
+.address, address {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	align-items: center;
+	text-align: center;
+}
+.row {
+	display: flex;
+	gap: 1rem;
+}
+.map {
+	border-radius: 1rem;
+}
+.radio {
+	display: flex;
+	flex-direction: column;
+	border: 0;
+}
+.radio label {
+	margin-left: 1rem;
 }
