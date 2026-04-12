@@ -28,6 +28,11 @@ header, main, footer {
 	margin: 0 auto;
 }
 
+main {
+	display: flex;
+	flex-flow: column;
+}
+
 header {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -90,7 +95,7 @@ section p {
 	font-size: 100px;
 	mix-blend-mode: exclusion;
 }
-.hero article {
+.hero div {
 	position: absolute;
 	bottom: 0;
 	width: calc(100% - 2rem);
@@ -98,8 +103,10 @@ section p {
 	background-color: var(--secondary-color);
 	color: var(--accent2-color);
 	box-shadow: 0 0 1rem 0 var(--shadow-color);
+	margin: 16px;
+	padding: 8px;
 }
-.hero article img {
+.hero div img {
 	float: right;
 	width: 150px;
 	height: 150px;
@@ -116,11 +123,11 @@ section p {
 	padding: 1rem;
 	box-shadow: 0 0 1rem 0 var(--shadow-color);
 }
-.history article {
+.history div {
 	position: relative;
 	display: flex;
 }
-.history article img {
+.history div img {
 	width: 250px;
 	height: 500px;
 	object-fit: cover;
@@ -193,7 +200,10 @@ table * {
 }
 .row {
 	display: flex;
+	align-self: center;
 	gap: 1rem;
+	margin: 16px;
+	padding: 8px;
 }
 .map {
 	border-radius: 1rem;
@@ -230,7 +240,7 @@ table * {
 	border-radius: 1rem;
 	box-shadow: 0 0 1rem 0 var(--shadow-color);
 }
-.grid h2 {
+.grid h3 {
 	color: black;
 }
 .grid img {
